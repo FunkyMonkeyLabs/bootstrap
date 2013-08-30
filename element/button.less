@@ -1,0 +1,60 @@
+.button (@color) {
+  background-color: @color;
+  color:lighten(@color, 35%);
+  .transition(background 0.5s);
+  .hover(@color);
+}
+
+.button {
+  border:none;
+  outline:none;
+  display: inline-block;
+  vertical-align: middle;
+  padding:5px;
+  border: 0px;
+  cursor: hand;
+  font-weight:200;
+  font-family: @font-family !important;
+
+  select& {
+    .border-radius(0);
+    -webkit-appearance: none;
+
+    &:after {
+      content:'<label><></label>';
+    }
+  }
+
+  &.small {
+    font-size:15px;
+  }
+
+  &.medium {
+    font-size:20px;
+  }
+
+  &.big {
+    font-size:30px;
+  }
+
+  &.default {
+    .button(@color-link-basic);
+  }
+
+  &.success {
+    .button(@color-success);
+  }
+
+  &.error {
+    .button(@color-error);
+  }
+
+  &.disabled {
+    background:@color-default;
+    color:darken(@color-default, 30%);
+  }
+
+  &>[class^="icon-"] {
+    margin:0 3px 0 3px;
+  }
+}
