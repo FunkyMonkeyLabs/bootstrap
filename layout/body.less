@@ -18,4 +18,15 @@ body {
     border:0px;
     border-bottom:1px solid fadeout(@color-link-hover-2, 70);
   }
+
+  a {
+    text-decoration: none;
+    color:@color-link-basic;
+    .transition(color 0.5s);
+
+    &:hover {
+      .transition(color 0.5s);
+      color:darken(@color-link-basic, 30);
+    }
+  }
 }
