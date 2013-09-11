@@ -1,0 +1,13 @@
+<div class="modal {{#if class}}{{class}}{{/if}}" id="{{#if id}}{{id}}{{/if}}">
+    <div class="grid">
+        <div class="row">
+            <div class="col2">
+                <span>{{{content}}}</span>
+                <div class="clear-both"></div>
+                {{#if button.close}}
+                    <span class="close button error medium">{{lang.close}}</span>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
