@@ -1,14 +1,11 @@
-Bootstrap
-============================
+# Bootstrap
 
-by [FunkyMonkeyLabs](http://github.com/funkymonkeylabs)
-------------------
+#### by [FunkyMonkeyLabs](http://github.com/funkymonkeylabs)
 
 1. What's in?
 2. Instalation
 
-What's in?
--------------
+## What's in?
 
 1. CSS:
   - buttons
@@ -26,8 +23,7 @@ What's in?
   - Modal
   - Confirm
 
-Instalation
---------------
+## Instalation
 1. Download (or clone) a repo
 
 ```bash
